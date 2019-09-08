@@ -2,7 +2,7 @@
 # Tests for checking boundary conditions.
 #
 
-from bin_search_algo import run as algo
+from fixed_interval_algo import run as algo
 from experiment import *
 import pytest
 
@@ -25,22 +25,44 @@ def test_level_13():
     assert experiment.num_attempts == 14
 
 
-def test_level_63_2_eggs():
-    """Test for level 0 with 128 stories and 2 egg."""
-    num_stories = 128
-    secret_level = 63
+def test_16_stories_2_eggs():
+    """Directed test for 10 stories with 2 eggs"""
+    num_stories = 16
+    num_eggs = 2
+    secret_level = 7
     experiment = Experiment(secret_level)
-    assert algo(num_stories, 2, experiment) == secret_level
-    assert experiment.num_attempts == 65
+    assert algo(num_stories, num_eggs, experiment) == secret_level
+    assert experiment.num_attempts == 9
 
 
-def test_level_127_2_eggs():
-    """Test for level 127 with 128 stories and 2 egg."""
-    num_stories = 128
-    secret_level = 127
+def test_16_stories_2_eggs_l_0():
+    """Directed test for 16 stories, 4 eggs, level=15"""
+    num_stories = 16
+    num_eggs = 4
+    secret_level = 0
     experiment = Experiment(secret_level)
-    assert algo(num_stories, 2, experiment) == secret_level
-    assert experiment.num_attempts == 8
+    assert algo(num_stories, num_eggs, experiment) == secret_level
+    assert experiment.num_attempts == 4
+
+
+def test_16_stories_4_eggs_l_7():
+    """Directed test for 16 stories, 4 eggs, level=15"""
+    num_stories = 16
+    num_eggs = 4
+    secret_level = 7
+    experiment = Experiment(secret_level)
+    assert algo(num_stories, num_eggs, experiment) == secret_level
+    assert experiment.num_attempts == 11
+
+
+def test_16_stories_4_eggs_l15():
+    """Directed test for 16 stories, 4 eggs, level=15"""
+    num_stories = 16
+    num_eggs = 4
+    secret_level = 15
+    experiment = Experiment(secret_level)
+    assert algo(num_stories, num_eggs, experiment) == secret_level
+    assert experiment.num_attempts == 3
 
 
 def test_algo_sanity():
@@ -53,8 +75,8 @@ def test_algo_sanity():
         assert algo(num_stories, num_eggs, experiment) == secret_level
 
 
-def test_algo_sanity_buckets_4():
-    """Test sanity that the algo works with 4 buckets. """
+def test_algo_sanity_4_eggs():
+    """Test sanity that the algo with always 4 eggs """
     for _ in range(100):
         num_stories = random.randint(128, 1024)
         num_eggs = 4
