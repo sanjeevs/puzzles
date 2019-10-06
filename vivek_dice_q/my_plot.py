@@ -11,7 +11,7 @@ def draw_bar(title, results):
         key = results[i]
         hist[key] += 1
 
-    x = 2.5
+    x = 1.0
     x_values = []
     y_values = []
     while x <= 6.0:

@@ -22,6 +22,23 @@ So you should *NEVER* play if the charge is more than that. Since you don't have
 
 The interesting question is what should be the optimum strategy so that you can achieve this best result.
 
+If I change the strategy to say 'min', then the result falls to $2. 
+
+```python
+python3 game.py --strategy=min
+```
+
+![Script output](https://github.com/sanjeevs/puzzles/blob/master/vivek_dice_q/max_rolls_3_min_strategy.png)
+
+# Anamaya Strategey
+Just for 3 rolls. 
+
+1. If the first dice comes with a 5, 6 then stop else continue
+
+2. if the second dice comes with a 4, 5, 6 then stop else continue
+
+3. Take what you got.
+
 # Interesting
 I ran the scripts with max rolls set to 2. The result is that you can play the game is the charge is less than $4.5.
 
