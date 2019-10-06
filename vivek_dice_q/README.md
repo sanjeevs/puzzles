@@ -15,7 +15,7 @@ python3 game.py
 ```
 
 Attached is the output of the script.
-
+![Script output](https://github.com/sanjeevs/puzzles/blob/master/vivek_dice_q/max_rolls_3.png)
 
 So you should *NEVER* play if the charge is more than that. Since you don't have perfect vision, your strategy can never be better than this and so your actual return will be less than this value.
 
@@ -29,4 +29,4 @@ I ran the scripts with max rolls set to 2. The result is that you can play the g
 python3 game.py --max_rolls=2
 ```
 
-
+![Script output](https://github.com/sanjeevs/puzzles/blob/master/vivek_dice_q/max_rolls_2.png)
