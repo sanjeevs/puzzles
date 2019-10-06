@@ -30,3 +30,12 @@ python3 game.py --max_rolls=2
 ```
 
 ![Script output](https://github.com/sanjeevs/puzzles/blob/master/vivek_dice_q/max_rolls_2.png)
+
+# Sanity check
+I ran the scripts with max rolls set to 1. The result is that you can play the game is the charge is less than $3.5.
+
+```python
+python3 game.py --max_rolls=1
+```
+
+![Script output](https://github.com/sanjeevs/puzzles/blob/master/vivek_dice_q/max_rolls_1.png)
