@@ -31,13 +31,18 @@ python3 game.py --strategy=min
 ![Script output](https://github.com/sanjeevs/puzzles/blob/master/vivek_dice_q/max_rolls_3_min_strategy.png)
 
 # Anamaya Strategey
-Just for 3 rolls. 
+Just doing for 3 rolls. It is pretty good. It comes up with $4.7
+
+```python
+python3 game.py --strategy=anamaya
+```
 
 1. If the first dice comes with a 5, 6 then stop else continue
 
 2. if the second dice comes with a 4, 5, 6 then stop else continue
 
 3. Take what you got.
+![Script output](https://github.com/sanjeevs/puzzles/blob/master/vivek_dice_q/anamaya_3_rolls.png)
 
 # Interesting
 I ran the scripts with max rolls set to 2. The result is that you can play the game is the charge is less than $4.5.
