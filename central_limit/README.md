@@ -12,4 +12,4 @@ As per the central limit theorem the PDF of the average score should be a bell c
 python3 central_limit.py 1000000 100
 ```
 
-![result][out_million_trial_100.png]
+![result](https://github.com/sanjeevs/puzzles/blob/master/central_limit/out_million_trial_100.png)
