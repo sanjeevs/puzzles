@@ -28,3 +28,22 @@ Connect 4 lines through all 9 points.
 
 ## 3 Glass Problem
 Given 8 ounces of liquid in 3 glasses of capacity 8, 5, 3 ounces, create 2 servings of 4 ounces each.
+
+## Infinity
+If you remove a little from infinity then it is still infinity. So use it to solve infinity fractions like
+1 + 1/(1 + 1/(1 + 1/...)). This is like function composition with x = 1 + 1/x.
+* Look at misc/fraction.py
+
+## Eratosthenes Experiment
+On Sept 23rd the experiment will be conducted.
+[http://eratosthenes.ea.gr/]
+[http://eratosthenes.ea.gr/Measure_the_distance.pdf]
+
+## Stellarium
+
+## Pendlum Experiment
+Calculate g from the time period of a pendlum?
+An engineer builds two simple pendula. Both are suspended from small wires secured to the ceiling of a room. Each pendulum hovers 2 cm above the floor. Pendulum 1 has a bob with a mass of 10 kg. Pendulum 2 has a bob with a mass of 100 kg. Describe how the motion of the pendula will differ if the bobs are both displaced by 12º.
+
+## Monkey pulley problem
+Monkey and a weight on opposite side of pulley. Both have equal weights. Monkey starts climbing up. What happens to the weight?
