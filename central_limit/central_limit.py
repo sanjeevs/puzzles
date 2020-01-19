@@ -20,7 +20,6 @@ def test(mtimes, ntimes):
     for i in range(mtimes):
         avg = experiment(ntimes)
         pdf[avg] += 1
-        if i % 1024 == 0
     return pdf
 
 

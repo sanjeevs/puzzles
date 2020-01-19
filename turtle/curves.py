@@ -1,11 +1,15 @@
 import turtle
 
 
-def draw_circle(pen, incr, angle):
-    num_steps = round(360 / angle)
+def draw_circle(pen, incr, angle, total_trip=360):
+    num_steps = round(total_trip / angle)
     for i in range(num_steps):
         pen.fd(incr)
         pen.rt(angle)
+
+
+def draw_qcircle(pen, incr, angle):
+    draw_circle(pen, incr, angle, 90)
 
 
 def draw_spiral(pen, incr, angle):
@@ -23,9 +27,7 @@ if __name__ == "__main__":
     print("Pen initial state xcor=", pen.xcor(), ",ycor=", pen.ycor())
     start_x = (win.window_width() / 2 - 30) * -1
     start_y = win.window_height() / 2
-    # pen.penup()
-    #pen.goto(start_x, start_y)
-    # pen.pendown()
-    draw_spiral(pen, 5, 20)
+    draw_circle(pen, 15, 5, 90)
+    #draw_spiral(pen, 5, 20)
 
     input("press any key to continue")
