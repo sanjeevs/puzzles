@@ -1,6 +1,10 @@
 # Consider a coin toss. If it is head, I sleep for 1 hr. If it is tail, I
 # watch a movie for 4 hrs.
-# What is the expected amount of time that I would sleep
+# What is the expected amount of time that I would sleep?
+# Answer: 0.2
+# python3 sleep_prob.py
+# Mean number of sleeping hours=0.20003780107903807
+
 import random
 
 
@@ -17,8 +21,10 @@ def experiment(n, p):
     samples = []
     for _ in range(n):
         if trial(p):
+            # Sleep for 1 hr
             samples.append(1)
         else:
+            # Watch a movie for 4hrs
             samples.extend([0] * 4)
     return samples
 

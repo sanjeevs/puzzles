@@ -27,11 +27,11 @@ class Hare:
 
 if __name__ == "__main__":
     num_hares = 10**6
-    total_hops = 100
+    total_hops = 1000
 
     hares = []
     for _ in range(num_hares):
-        hares.append(Hare((-1, 5), (0.8, 0.2)))
+        hares.append(Hare((-1, 1), (0.01, 0.99)))
 
     for i in range(total_hops):
         for j in range(len(hares)):
